@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta charset="utf-8">
+    <title>privacyNULL</title>
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
+
+  <div id="main" class="">
+    <div id="userbox">
+      <h1>chat</h1>
+      <input type="text" id="handle" value="" placeholder="username...">
+      <input type="submit" name="" value="ok" id="login">
+      </div>
+
+    <div class="container">
+      <div class="row">
+        <div id="chatbox" >
+          <div id="usersdata" class="col-sm-4 col-md-6 offset-sm-8" style="margin: 0px;"></div>
+         
+         <div id="chatwindow" class="">
+          <div id="output" class=""> <!--messages will be shown here -->
+          </div>
+            <div id="feedback" class=""></div>
+          </div>
+         </div>
+        </div>
+        <div id="messagingbox">
+      <input type="text" id="message" style="width: 251px;height: 58px;" value="" placeholder="message here">
+      <input type="submit" class="btn btn-primary" name="" value="send" id="send">
+    </div>
+    </div>
+    </div>
+
+
+<strong>other user can see whatever you are typing even though you havent send it</strong>
+<script type="text/javascript" src="/chat.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
