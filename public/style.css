@@ -1,9 +1,3 @@
-#chatbox{
-    /* display:none; */
-    position: relative;
-   
-  } 
-
   .column {
     flex: 50%;
     padding: 10px;
@@ -29,7 +23,9 @@
     position: relative;
     background-color: chartreuse;
 }
-
+#chatbox{
+    overflow-y: auto;
+}
   #container{
     display: flex;
     /* padding: 20% 40%; */

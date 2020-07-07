@@ -9,6 +9,7 @@ var chatbox = document.getElementById('chatbox');
 var userbox = document.getElementById('userbox');
 var usersdata = document.getElementById('usersdata');
 
+
 newuser.addEventListener('click',function(){
   socket.emit('new user',handle.value,function(data){
     if(data){

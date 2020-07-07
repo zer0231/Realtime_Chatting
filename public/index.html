@@ -21,12 +21,12 @@
       
       
          <div id="chatwindow" class="column">
-          <div id="output" class=""> <!--messages will be shown in output div -->
+          <div id="output" class="" style="overflow-y: scroll; height:400px;"> <!--messages will be shown in output div -->
           </div>
             <div id="feedback" class=""></div>
           </div>
 
-          <div id="chatbox" class="column">
+          <div id="chatbox" class="column" >
             <div id="usersdata" >
             <!--userdata shows online count-->
               <!--here a list of online users will be shown-->
@@ -36,7 +36,7 @@
         
         
     </div>
-    <div id="messagingbox">
+    <div id="messagingbox" class="chatbox">
       <input type="text" id="message" value="" placeholder="message here">
       <input type="submit" class="btn btn-primary" name="" value="send" id="send">
     </div>
