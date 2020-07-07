@@ -1,8 +1,38 @@
 #chatbox{
-    display:none;
-  }
+    /* display:none; */
+    position: relative;
+   
+  } 
 
+  .column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
   #messagingbox{
       position: sticky;
-      padding-top: 100%;
+      /* padding-top: 100%;*/
+  } 
+
+  #usersdata{
+      position: relative;
+      border: 1px solid black;
+      padding-right: 60%;
+      background-color: aqua;
+      width:40%;
   }
+#online-users{
+    border: 1px solid black;
+}
+
+#output{
+    position: relative;
+    background-color: chartreuse;
+}
+
+  #container{
+    display: flex;
+    /* padding: 20% 40%; */
+      text-align: left;
+  }
+

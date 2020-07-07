@@ -32,7 +32,7 @@ socket.on('get users',function(data){
   const total_user = data.length;
   var onlineusers=total_user +"online";
 				for(i=0;i<data.length;i++){
-					onlineusers += '<li class="list-group-item">'+data[i]+'</i>';
+					onlineusers += '<li id="online-users">'+data[i]+'</i>';
           if (total_user != data.length){
             onlineusers += '<li class="list-group-item">'+data[i]+' has left</i>';
           }

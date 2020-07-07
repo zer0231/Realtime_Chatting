@@ -17,22 +17,28 @@
       <input type="submit" name="" value="ok" id="login">
       </div>
 
-    <div class="container">
-      <div class="row">
-        <div id="chatbox" >
-          <div id="usersdata" class="col-sm-4 col-md-6 offset-sm-8" style="margin: 0px;"></div>
-         
-         <div id="chatwindow" class="">
-          <div id="output" class=""> <!--messages will be shown here -->
+    <div id="container">
+      
+      
+         <div id="chatwindow" class="column">
+          <div id="output" class=""> <!--messages will be shown in output div -->
           </div>
             <div id="feedback" class=""></div>
           </div>
-         </div>
-        </div>
-        <div id="messagingbox">
-      <input type="text" id="message" style="width: 251px;height: 58px;" value="" placeholder="message here">
-      <input type="submit" class="btn btn-primary" name="" value="send" id="send">
+
+          <div id="chatbox" class="column">
+            <div id="usersdata" >
+            <!--userdata shows online count-->
+              <!--here a list of online users will be shown-->
+            </div>
+          </div>
+         
+        
+        
     </div>
+    <div id="messagingbox">
+      <input type="text" id="message" value="" placeholder="message here">
+      <input type="submit" class="btn btn-primary" name="" value="send" id="send">
     </div>
     </div>
 
