@@ -1,11 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/styles.css">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> <title><%= title%></title>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RexText</title>
+  <style>
+    
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+.output_messages{
+  height: 400px;
+  width: 100%;  
+  overflow-y: auto;
+  overflow-x: auto;
+  }
+  .online_list{
+    height: 400px;
+    overflow-y: auto;
+  }
+  
+      
+  </style>
+  <link href="/css/materialize.css" rel="stylesheet" >
+  <script src="/js/chat.js"></script>
 </head>

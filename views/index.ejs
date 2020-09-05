@@ -1,15 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-    <%-include('./partials/head.ejs')%>
+
+<%- include('partials/head'); -%>
 <body>
-   <%-include('./partials/nav.ejs')%>
+  <header>
+  <!-- nav bar start -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <%- include('partials/nav'); -%>
+  <!-- nav bar end -->
+</header>
+       
 
-   <!--this is a fixed floating button-->
-<div class="fixed-action-btn">
-    <a class="btn-floating btn-large red" href="/create">
-      <i class="large material-icons">mode_edit</i>
-    </a>
+        <!-- main started -->
+        <main class="grey darken-3">
+          <br>
+          <div class="container">
+            <div id="userbox">
+              <input type="text" id="handle" value="" placeholder="username...">
+              <input type="submit" name="" value="ok" id="login">
+              </div>
+          <!-- making a 12 column div -->
+          <div class="row grey darken-2">
+            <div class="col s8">
+<!-- show message -->
+<span class="white-text text-darken-2"><h4>Global Messages</h4></span>
+<div class="output_messages" id="output">
+
+ 
+</div>
+
+
+
+</div>
+
+<div class="col s4">
+<!-- shows user online -->
+<span class="white-text text-darken-2"><h4>Online Users</h4></span>
+  <div id="usersdata" class="online_list">
   </div>
-    
+</div>
+</div>
+  <!-- show messaging box -->
+  <div id="messagingBox">
+    <!-- to make them in 1 row -->
+    <div class="row">
+      <div class="input-field col s6">
+        <textarea  type="text" name="message" id="message" class="materialize-textarea"></textarea>
+        <label for="message">Your Message</label>
+      </div>
+      <div class="input-field col s6"> 
+    <input type="submit" value="send" id="send" class="waves-effect waves-light btn">
+    </div>
+    </div>
+  </div>
+  <!-- someone typing will be shown here -->
+<div id="typing" >
+</div>
+</div>
 
-<%- include('./partials/footer.ejs') %> 
+
+<!-- main end -->
+</main>
+<script src="/js/chat.js"></script>
+  
+<%- include('partials/footer'); -%>
+
+</body>
+</html>
