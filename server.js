@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var express = require('express');
 var socket = require('socket.io');
 const app = express();
@@ -12,7 +14,7 @@ app.use(express.json());
 
 users =[];
 socket_connected =[];
-var server = app.listen(3001,function(){
+var server = app.listen(process.env.PORT||3001,function(){
   console.log("server running");
 });
 
